@@ -1,30 +1,51 @@
-/*Welcome to Java!
+/*Java Stdin and Stdout I
+Most HackerRank challenges require you to read input from stdin (standard input) and write output to stdout (standard output).
+One popular way to read input from stdin is by using the Scanner class and specifying the Input Stream as System.in. For example:
 
-Welcome to the world of Java! In this challenge, we practice printing to stdout.
+Scanner scanner = new Scanner(System.in);
+String myString = scanner.next();
+int myInt = scanner.nextInt();
+scanner.close();
 
-The code stubs in your editor declare a Solution class and a main method. Complete the main method by copying the two lines of code below and pasting them inside the body of your main method.
+System.out.println("myString is: " + myString);
+System.out.println("myInt is: " + myInt);
+The code above creates a Scanner object named  and uses it to read a String and an int. It then closes the Scanner object because there is no more input to read, and prints to stdout using System.out.println(String). So, if our input is:
 
-System.out.println("Hello, World.");
-System.out.println("Hello, Java.");
+Hi 5
+Our code will print:
+
+myString is: Hi
+myInt is: 5
+Alternatively, you can use the BufferedReader class.
+
+Task
+In this challenge, you must read  integers from stdin and then print them to stdout. Each integer must be printed on a new line. To make the problem a little easier, a portion of the code is provided for you in the editor below.
+
 Input Format
 
-There is no input for this challenge.
+There are  lines of input, and each line contains a single integer.
 
-Output Format
-
-You must print two lines of output:
-
-1.Print Hello, World. on the first line.
-2.Print Hello, Java. on the second line.
+Sample Input
+42
+100
+125
 
 Sample Output
-
-Hello, World.
-Hello, Java.*/
+42
+100
+125
+*/
+import java.util.*;
 public class Solution {
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = scan.nextInt();
 
-    public static void main(String[] args) {
-        /* Enter your code here. Print output to STDOUT. Your class should be named Solution. */
-        System.out.println("Hello, World.\nHello, Java.");
-    }
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+ }
+
 }
