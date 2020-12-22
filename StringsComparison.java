@@ -1,7 +1,7 @@
 /*
 Java Strings Introduction
 Input Format
-The first line contains a string . The second line contains another string . The strings are comprised of only lowercase English letters.
+The first line contains a string A . The second line contains another string B. The strings are comprised of only lowercase English letters.
 
 Output Format
 There are three lines of output:
