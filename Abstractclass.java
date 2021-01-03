@@ -15,12 +15,6 @@ abstract class Book{
         this.title = s;
     }
 }
-
-/*Java Abstract Class
-Sample Input
-A tale of two cities
-Sample Output
-The title is: A tale of two cities*/
 public class Abstractclass{
 	
 	public static void main(String []args){
